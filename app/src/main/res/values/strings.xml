@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">menu</string>
+    <string name="menu_name">Menu name</string>
+    <string name="save_menu">Button</string>
+
+    <array name="categories">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Dessert</item>
+        <item>Snack</item>
+    </array>
 </resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "987798556064",
+    "firebase_url": "https://weeklyfoodmenutrack.firebaseio.com",
+    "project_id": "weeklyfoodmenutrack",
+    "storage_bucket": "weeklyfoodmenutrack.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987798556064:android:d6bd1722e008dd3a",
+        "android_client_info": {
+          "package_name": "com.main.menu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987798556064-3qucql7jq58e2j7d6kea8k5vq7343qtq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.main.menu",
+            "certificate_hash": "fc275ad9f2d3621ecbe05671abd7d9a67be2e3b6"
+          }
+        },
+        {
+          "client_id": "987798556064-u5bmj9eitenjbrrurmvnpmrtub10pj6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNDqHy8IvzKIQHk_AtZ-wySWXPmYHqoLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987798556064-u5bmj9eitenjbrrurmvnpmrtub10pj6m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
