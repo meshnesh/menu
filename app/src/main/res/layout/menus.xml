@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
+              android:orientation="horizontal"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <TextView
-            android:text="TextView"
-            android:layout_width="match_parent"
+    <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tvMenuName"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+            android:orientation="vertical">
+        <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMenuName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMenuCategory"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    </LinearLayout>
 
     <TextView
-            android:text="TextView"
+            android:text="@string/update"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/tvMenuCategory"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            android:id="@+id/tvUpdateName"
+            android:layout_marginLeft="32dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"/>
+
+
 </LinearLayout>

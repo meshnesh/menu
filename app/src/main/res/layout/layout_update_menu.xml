@@ -15,7 +15,7 @@
             android:layout_marginTop="15dp"
             android:ems="10"
             android:maxLength="30"
-            android:id="@+id/editMenuName"
+            android:id="@+id/editUpdateMenuName"
             android:hint="@string/menu_name"
             android:textStyle="normal"/>
 
@@ -23,18 +23,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:id="@+id/spinner"
+            android:id="@+id/updateSpinner"
             android:entries="@array/categories" />
-
-    <Button
-            android:text="@string/save_menu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:id="@+id/button"/>
-    <ListView
-            android:id="@+id/menuList"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="15dp"/>
 </LinearLayout>

@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
                         menuList.add(menu!!)
                     }
 
-                    val adapter = MenuAdapter(applicationContext, R.layout.menus, menuList)
+                    val adapter = MenuAdapter(this@MainActivity, R.layout.menus, menuList)
                     listView.adapter = adapter
                 }
             }
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun saveMenu() {
-        val name = editMenuName.text.toString().trim()
+        val name = editMenuName.text.toString()
         val category = categories.selectedItem.toString().trim()
 
         if (name.isEmpty()) {

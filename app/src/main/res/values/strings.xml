@@ -2,6 +2,7 @@
     <string name="app_name">menu</string>
     <string name="menu_name">Menu name</string>
     <string name="save_menu">Button</string>
+    <string name="update">Update</string>
 
     <array name="categories">
         <item>Breakfast</item>
