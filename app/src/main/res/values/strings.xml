@@ -3,6 +3,8 @@
     <string name="menu_name">Menu name</string>
     <string name="save_menu">Button</string>
     <string name="update">Update</string>
+    <string name="add_menu">Add Menu</string>
+    <string name="enter_menu_name">Menu Name</string>
 
     <array name="categories">
         <item>Breakfast</item>

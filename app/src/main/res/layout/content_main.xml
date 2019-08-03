@@ -7,18 +7,42 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:maxLength="30"
+            android:id="@+id/editMenuName"
+            android:hint="@string/menu_name"
+            android:textStyle="normal"/>
+
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/spinner"
+            android:entries="@array/categories" />
+
+    <Button
+            android:text="@string/save_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/button"/>
     <TextView
             android:id="@+id/fab"
             android:layout_margin="10dp"
             android:gravity="center"
             android:background="@drawable/shop_now"
-            android:layout_width="match_parent"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:textColor="#FFF"
             android:textStyle="bold"
             android:text="@string/add_menu"
-            android:layout_marginTop="32dp"
             android:textSize="20sp"
             android:elevation="2dp"
             android:layout_gravity="bottom|end"

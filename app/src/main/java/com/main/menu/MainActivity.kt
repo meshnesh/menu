@@ -1,18 +1,18 @@
 package com.main.menu
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.*
 import androidx.core.view.isEmpty
 import com.google.firebase.database.*
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var editMenuName: EditText
-    lateinit var categories: Spinner
-    lateinit var buttonSave: Button
     lateinit var ref: DatabaseReference
     lateinit var listView: ListView
+    lateinit var fab: TextView
 
     lateinit var menuList: MutableList<Menu>
 
@@ -23,13 +23,15 @@ class MainActivity : AppCompatActivity() {
         menuList = mutableListOf()
         ref = FirebaseDatabase.getInstance().getReference("menus")
 
-        editMenuName = findViewById(R.id.editMenuName)
-        categories = findViewById(R.id.spinner)
-        buttonSave = findViewById(R.id.button)
         listView = findViewById(R.id.menuList)
+        fab = findViewById(R.id.fab)
 
-        buttonSave.setOnClickListener() {
-            saveMenu()
+
+
+
+        fab.setOnClickListener {
+            val addMenu = Intent(this@MainActivity, AddMenu::class.java)
+            startActivity(addMenu)
         }
 
         ref.addValueEventListener(object : ValueEventListener {
@@ -50,24 +52,5 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         })
-
-    }
-
-    private fun saveMenu() {
-        val name = editMenuName.text.toString()
-        val category = categories.selectedItem.toString().trim()
-
-        if (name.isEmpty()) {
-            editMenuName.error = "Please enter a name "
-            return
-        }
-
-        val menuId = ref.push().key.toString()
-
-        val menu = Menu(menuId, name, category)
-
-        ref.child(menuId).setValue(menu).addOnCompleteListener {
-            Toast.makeText(this, "Saved", Toast.LENGTH_LONG).show()
-        }
     }
 }

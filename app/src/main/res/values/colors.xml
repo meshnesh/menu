@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#00A99D</color> // theme color and prices
+    <color name="colorPrimaryDark">#00A99D</color>
+    <color name="colorAccent">#FC4500</color> // links, notification icons and buttons
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorMainBackground">#EEEEEE</color> // main backgroud color
+    <color name="colorMainBackgroundSomePages">#FAFAFA</color> // background color some pages
+    <color name="colorProductName">#707070</color> // product name
+    <color name="colorDisabled">#C8CBCD</color> // add to wish list icon, disabled buttons
+    <color name="colorEditCancelUndoButtonLinks">#1080D0</color> // edit, cancel, undo buttons and links
+    <color name="colorBottomBorder">#9B9B9B</color> // bottom boarder
+    <color name="colorRegistrationButton">#008489</color>
+    <color name="colorDot">#D4AF37</color> // buttons
+    <color name="colorShadow">#1A000000</color> // shadows
+    <color name="colorSectionTitle">#3D3D3D</color>
+    <color name="colorTintPrimary">#AA00A99D</color>
+    <color name="colorFaceBook">#2D4A86</color>
+    <color name="buttonColor">#FCB121</color>
+
 </resources>
